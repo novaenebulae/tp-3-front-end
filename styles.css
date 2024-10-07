@@ -39,7 +39,7 @@ p {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
     body {
         margin-left: 0px;
@@ -62,7 +62,7 @@ p {
     border-radius: 3px;
     margin-top: 50px;
     padding: 25px;
-    width: 50%;
+    width: 75%;
 }
 
 .name-card h1 {
@@ -86,7 +86,6 @@ p {
 .name-card p {
     position: relative;
     margin: 10px;
-    font-size: 1.5em;
 }
 
 @media screen and (max-width: 900px) {
@@ -101,6 +100,39 @@ p {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .name-card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    .name-card h1 {
+        font-size: 35px;
+    }
+    
+    .name-card p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .name-card h1 {
+        font-size: 25px;
+    }
+
+    .name-cardp {
+        font-size: 10px;
+    }
+
+    .name-card img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
 
 
 .contact-button {
@@ -131,6 +163,17 @@ p {
     font-size: 20px;
 }
 
+@media screen and (max-width: 350px) {
+    .contact-button {
+        width: 80%;
+    }
+
+    .contact-button p {
+        width: fit-content;
+        font-size: 15px;
+    }
+}
+
 
 
 .carousel {
@@ -149,7 +192,7 @@ p {
 
 .carousel-buttons {
     display: flex;
-    width: 500px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
@@ -178,13 +221,25 @@ p {
     color: #02101c;;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 350px) {
 
     .carousel {
-        margin-bottom: 0px;
+        height: 100%;
     }
     .carousel-buttons {
         width: 100%;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-buttons svg {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
@@ -271,14 +326,16 @@ p {
     }
 
     .project {
-        margin-top: 75px;
+        margin-bottom: 120px;
     }
 
     .project img {
         width: 100px;
     }
+
     .project-card {
         width: 100%;
+        padding: 0;
     }
 
     .project:nth-child(odd) h1 {
@@ -287,6 +344,34 @@ p {
     
 }
 
+@media screen and (max-width: 500px) {
+    .project {
+        flex-direction: column;
+        margin-bottom: 50px;
+        
+    }
+
+    .project:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .project img {
+        width: 100%;
+        height: 100px;
+        margin-top: 40px;
+    }
+
+    .project-card h1{
+        top: -180px;
+    }
+
+    .project-card p {
+        width: 100%;
+        font-size: 15px;
+        height: fit-content;
+    }
+
+}
 
 
 .logos-container {
